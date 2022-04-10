@@ -1,0 +1,242 @@
+html {
+    font-family: 'Noto Serif', serif;
+    font-size: 10px;
+}
+:root {
+    --primary-color:rgb(22, 61, 96);
+    --secondary-color:#B69F84;
+    --shade-color:#ECEAE5;
+    --reset-color:#F5F5F5;
+    --font-weight: bold;
+    --border-radius: 2px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+}
+.content-center {
+    margin: 0 auto;
+    width: 80%;
+}
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: var(--secondary-color);
+    padding: 0.3em;
+    height: 3%;
+}
+header a,span{
+    color: var(--reset-color);
+    margin-right: 3rem;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+main img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+main .cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgb(11, 49, 82), rgba(22, 61, 96, 0.3));
+    z-index: 2;
+}
+main nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+}
+nav a {
+    flex-basis: 40%;
+    color:var(--reset-color);
+}
+nav a span {
+    color: var(--secondary-color);
+    font-size: 2rem;
+}
+nav menu {
+    flex-basis: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+menu a .kyqu {
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    border: 2px solid var(--secondary-color);
+}
+menu a .kyqu:hover {
+    background-color: transparent;
+    color: white;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--secondary-color);
+}
+menu button {
+    background-color: transparent;
+    color: var(--reset-color);
+    font-weight: var(--font-weight);
+    border: none;
+    font-size: 1.8rem;
+    padding: .6em 1em;
+    letter-spacing: 0.1rem;
+    font-family:sans-serif;
+}
+menu button:hover {
+    background-color: var(--secondary-color);
+    color: var(--reset-color);
+    font-weight: var(--font-weight);
+    border: none;
+    font-size: 1.8rem;
+    padding: .6em 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: var(--border-radius);
+}
+.content-center .hero-content {
+
+    width: 50%;
+    position: absolute;
+    z-index: 3;
+    top: 25%;            
+}
+.hero-content h1 {
+    color: var(--reset-color);
+    font-size: 4.6rem;
+    line-height: 1.1;
+    letter-spacing: .15rem;
+}
+.hero-content p {
+    color: var(--reset-color);
+    font-size: 1.6rem;
+    letter-spacing: .12rem;
+}
+.hero-content .regjistrohu {
+    border-color:var(--secondary-color);
+    background-color: transparent;
+    padding: .7em;
+    color: var(--secondary-color);
+    font-weight: var(--font-weight);
+    font-size: 1.7rem;
+    letter-spacing: .1rem;
+    margin-top: 1.5rem;
+    margin-left: 0%;
+}
+.hero-content .regjistrohu:hover {
+    border-color:var(--secondary-color);
+    background-color: var(--secondary-color);
+    padding: .7em;
+    color: var(--reset-color);
+    font-weight: var(--font-weight);
+    font-size: 1.7rem;
+    letter-spacing: .1rem;
+}
+
+
+
+.bg-cover {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--shade-color);
+    position: relative;
+}
+
+.hints {
+    height: 35%;
+    display: flex;
+    gap: 5rem;
+    position: absolute;
+    top: -15%;
+    left: 10%;
+    z-index: 4;
+}
+
+.hint {
+    width: 33%;
+    padding: 4em 1.5em;
+    height: 100%;
+    border-radius: 3px;
+    gap: .8rem;
+}
+.hint .hint-ico {
+    width: 4.3rem;
+}
+
+.hint p {
+    line-height: 1.4;
+}
+.hint-l {
+    background-color: var(--secondary-color);
+    color: var(--reset-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.hint-l p{
+  color: antiquewhite;
+}
+.hint-l a{
+    color: white;
+
+}
+.hint-m {
+    background-color: var(--reset-color);
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.hint-m p{
+  color: var(--primary-color);
+}
+.hint-m a{
+    color: var(--primary-color);
+
+}
+.hint-r {
+    background-color: var(--primary-color);
+    color: var(--reset-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.hint-r p{
+  color: antiquewhite;
+}
+.hint-r a{
+    color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.s1 {
+    width: 100%;
+    height: 100vh;
+}
+
+.transition:hover {
+    transform: scale(1.05);
+    transition: .7s;
+    cursor: pointer;
+}

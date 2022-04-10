@@ -1,0 +1,37 @@
+body{
+    background-color: lightgreen;
+}
+h1 {
+text-align: center;
+font-weight: bold;
+font-family:'Courier New', Courier, monospace;
+}
+
+.last{
+    max-width: auto;
+    max-height: 300px;
+    overflow: scroll;
+    background-color: aqua;
+}
+p{
+   
+    font-weight: bold;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
+a:link {
+  
+    padding: 7px 15px;
+    text-decoration: none;
+    background-color: aqua;
+    margin: 9px 15px;
+    border:2px solid red;
+    border-radius: 20px;
+}
+.linku{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    margin-top: 40px;
+}

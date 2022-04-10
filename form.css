@@ -1,0 +1,187 @@
+html {
+    font-family: 'Noto Serif', serif;
+    font-size: 10px;
+}
+:root {
+    --primary-color:rgb(22, 61, 96);
+    --secondary-color:#B69F84;
+    --shade-color:#ECEAE5;
+    --reset-color:#F5F5F5;
+    --font-weight: bold;
+    --border-radius: 2px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+}
+.content-center {
+    margin: 0 auto;
+    width: 80%;
+}
+a {
+    text-decoration: none;
+}
+#f-bg {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 110vh;
+}
+.f-center {
+    width: 70%;
+    margin: 0 auto;
+}
+.f-center h1 {
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 3.7rem;
+    padding-top: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+input {
+    width: 70%;
+    height: 4rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--secondary-color);
+    outline: none;
+}
+
+input::placeholder {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+select {
+    width: 30%;
+    height: 4rem;
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    align-self: flex-start;
+    margin-left: 15%;
+}
+
+.opsionet {
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+button {
+    background-color: var(--secondary-color);
+    color: var(--reset-color);
+    font-size: 2rem;
+    font-weight: bold;
+    padding: .5em 1.6em;
+    border-radius: 3px;
+    border: 2px solid var(--secondary-color);
+    align-self: flex-start;
+    margin-left: 15%;
+}
+button:hover {
+    background-color: transparent;
+    color: var(--secondary-color);
+    font-size: 2rem;
+    font-weight: bold;
+    padding: .5em 1.6em;
+    border-radius: 3px;
+    border: 2px solid var(--secondary-color);
+}
+
+
+#t-bg {
+    width: 100%;
+    height: 80vh;
+    background-color: var(--shade-color);
+}
+
+.testimonial {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4.5rem;
+}
+.testemonila-title h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin:4rem 0 .5rem 0;
+    text-align: center;
+}
+.testemonila-title p {
+    font-size: 1.6rem;
+    color: grey;
+    text-align: center;
+}
+.studentat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    column-gap: 4%;
+}
+.studenti {
+    width: 33%;
+    height: 50%;
+    padding: 1em 1.5em;
+    background-color: var(--reset-color);
+    border-radius: 3px;
+    box-shadow: 0px 4px 8px rgb(212, 210, 210);
+}
+.profile{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+}
+.profile img {
+    flex-basis: 25%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.details {
+    padding-left: .6em;
+}
+.details P:first-child {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.details P:last-child {
+    color: gray;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.studenti p {
+    color: grey;
+    line-height: 1.4;
+}
+
+
+.pagination-t {
+    position: absolute;
+    left: 25%;
+    bottom: -10%;
+    z-index: 6;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    gap: 1rem;
+}
+.pagination-t .pages-t {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: grey;
+}
+.pages-t:nth-child(2) {
+    background-color: var(--primary-color);
+}
